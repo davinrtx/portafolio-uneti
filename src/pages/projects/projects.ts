@@ -8,6 +8,7 @@ export interface Project {
   postLink?: string;
   demoLinkRel?: string;
   [key: string]: any;
+  owner?: string[];
 }
 
 export const projects: Project[] = [
@@ -15,7 +16,8 @@ export const projects: Project[] = [
     name: 'Devaradise.com',
     description: 'A blog that sharing web development resources and tutorials',
     demoLink: 'https://devaradise.com',
-    tags: ['Blog']
+    tags: ['Blog'],
+    owner: ["Paola"],
   },
   {
     name: 'Sellercraft App',
